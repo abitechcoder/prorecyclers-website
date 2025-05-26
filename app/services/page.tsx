@@ -22,7 +22,7 @@ export default function ServicesPage() {
             </div>
             <div className="mx-auto lg:mx-0">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/recycling-facility.png"
                 width={600}
                 height={400}
                 alt="Recycling facility"
@@ -65,6 +65,15 @@ export default function ServicesPage() {
                     <CardDescription>Collection and processing of household plastic waste</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-1">
+                    <div className="mb-4 aspect-video overflow-hidden rounded-md">
+                      <Image
+                        src="/images/plastic-recycling.png"
+                        width={400}
+                        height={225}
+                        alt="Plastic recycling"
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
                     <p className="text-sm text-muted-foreground">
                       We accept all types of plastic containers, including bottles, jugs, tubs, and containers. Our
                       specialized sorting process ensures that each type of plastic is properly processed for maximum
@@ -102,6 +111,15 @@ export default function ServicesPage() {
                     <CardDescription>Collection and processing of paper products</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-1">
+                    <div className="mb-4 aspect-video overflow-hidden rounded-md">
+                      <Image
+                        src="/images/paper-recycling.png"
+                        width={400}
+                        height={225}
+                        alt="Paper recycling"
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
                     <p className="text-sm text-muted-foreground">
                       Our paper recycling service helps reduce deforestation and conserve natural resources. We accept a
                       wide range of paper products from your home, ensuring they're properly processed and recycled.
@@ -138,6 +156,15 @@ export default function ServicesPage() {
                     <CardDescription>Collection and processing of metal items</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-1">
+                    <div className="mb-4 aspect-video overflow-hidden rounded-md">
+                      <Image
+                        src="/images/metal-recycling.png"
+                        width={400}
+                        height={225}
+                        alt="Metal recycling"
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
                     <p className="text-sm text-muted-foreground">
                       Metal recycling is one of the most efficient forms of recycling, with significant energy savings
                       compared to mining new materials. We collect and process various metal items from your home.
@@ -174,6 +201,15 @@ export default function ServicesPage() {
                     <CardDescription>Safe disposal of electronic devices</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-1">
+                    <div className="mb-4 aspect-video overflow-hidden rounded-md">
+                      <Image
+                        src="/images/ewaste-recycling.png"
+                        width={400}
+                        height={225}
+                        alt="E-waste recycling"
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
                     <p className="text-sm text-muted-foreground">
                       Electronic waste contains valuable materials that can be recovered, as well as potentially harmful
                       substances that require proper handling. Our e-waste recycling service ensures safe and

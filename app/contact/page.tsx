@@ -4,6 +4,7 @@ import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
@@ -279,10 +280,13 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="aspect-video w-full overflow-hidden rounded-lg border">
-            {/* In a real application, you would embed a Google Map or similar here */}
-            <div className="flex h-full w-full items-center justify-center bg-muted">
-              <p className="text-muted-foreground">Map Placeholder - Embed your map here</p>
-            </div>
+            <Image
+              src="/images/badagry-map.png"
+              width={1200}
+              height={675}
+              alt="Map of EcoCycle Solutions location"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </section>

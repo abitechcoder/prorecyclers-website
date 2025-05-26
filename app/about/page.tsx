@@ -24,7 +24,7 @@ export default function AboutPage() {
             </div>
             <div className="mx-auto lg:mx-0">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/team-working.png"
                 width={600}
                 height={400}
                 alt="EcoCycle Solutions team"
@@ -41,10 +41,10 @@ export default function AboutPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="order-2 lg:order-1">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/recycling-facility.png"
                 width={600}
                 height={400}
-                alt="EcoCycle Solutions founding"
+                alt="EcoCycle Solutions facility"
                 className="rounded-lg object-cover"
               />
             </div>
@@ -228,7 +228,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center space-y-4">
               <div className="relative h-40 w-40 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=160&width=160"
+                  src="/images/team-member-1.png"
                   width={160}
                   height={160}
                   alt="CEO portrait"
@@ -246,7 +246,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center space-y-4">
               <div className="relative h-40 w-40 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=160&width=160"
+                  src="/images/team-member-2.png"
                   width={160}
                   height={160}
                   alt="COO portrait"
@@ -264,7 +264,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center space-y-4">
               <div className="relative h-40 w-40 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=160&width=160"
+                  src="/images/team-member-3.png"
                   width={160}
                   height={160}
                   alt="CTO portrait"

@@ -33,7 +33,7 @@ export default function Home() {
             </div>
             <div className="mx-auto lg:mx-0 relative">
               <Image
-                src="/placeholder.svg?height=550&width=550"
+                src="/images/hero-recycling.png"
                 width={550}
                 height={550}
                 alt="Recycling process illustration"
@@ -65,6 +65,15 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent>
+                <div className="mb-4 h-40 w-full overflow-hidden rounded-md">
+                  <Image
+                    src="/images/plastic-recycling.png"
+                    width={300}
+                    height={160}
+                    alt="Plastic recycling"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Responsible collection and processing of all types of plastic waste.
                 </p>
@@ -78,6 +87,15 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent>
+                <div className="mb-4 h-40 w-full overflow-hidden rounded-md">
+                  <Image
+                    src="/images/paper-recycling.png"
+                    width={300}
+                    height={160}
+                    alt="Paper recycling"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Efficient recycling of paper products to reduce deforestation.
                 </p>
@@ -91,6 +109,15 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent>
+                <div className="mb-4 h-40 w-full overflow-hidden rounded-md">
+                  <Image
+                    src="/images/metal-recycling.png"
+                    width={300}
+                    height={160}
+                    alt="Metal recycling"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Collection and processing of various metal materials for reuse.
                 </p>
@@ -104,6 +131,15 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent>
+                <div className="mb-4 h-40 w-full overflow-hidden rounded-md">
+                  <Image
+                    src="/images/ewaste-recycling.png"
+                    width={300}
+                    height={160}
+                    alt="E-waste recycling"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Safe disposal and recycling of electronic waste and components.
                 </p>

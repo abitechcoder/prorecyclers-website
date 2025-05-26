@@ -24,7 +24,7 @@ export default function ImpactPage() {
             </div>
             <div className="mx-auto lg:mx-0">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/community-cleanup.png"
                 width={600}
                 height={400}
                 alt="Environmental impact visualization"
@@ -119,7 +119,7 @@ export default function ImpactPage() {
               <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                 <div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/images/paper-recycling.png"
                     width={600}
                     height={400}
                     alt="Resource conservation"
@@ -154,7 +154,7 @@ export default function ImpactPage() {
               <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                 <div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/images/plastic-recycling.png"
                     width={600}
                     height={400}
                     alt="Emissions reduction"
@@ -189,7 +189,7 @@ export default function ImpactPage() {
               <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                 <div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/images/metal-recycling.png"
                     width={600}
                     height={400}
                     alt="Water conservation"
@@ -224,7 +224,7 @@ export default function ImpactPage() {
               <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                 <div>
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/images/community-cleanup.png"
                     width={600}
                     height={400}
                     alt="Community impact"
@@ -279,7 +279,7 @@ export default function ImpactPage() {
               <CardContent>
                 <div className="mb-4 aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/office-recycling.png"
                     width={300}
                     height={200}
                     alt="Office recycling program"
@@ -301,7 +301,7 @@ export default function ImpactPage() {
               <CardContent>
                 <div className="mb-4 aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/community-cleanup.png"
                     width={300}
                     height={200}
                     alt="Community cleanup event"
@@ -323,7 +323,7 @@ export default function ImpactPage() {
               <CardContent>
                 <div className="mb-4 aspect-video overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/school-program.png"
                     width={300}
                     height={200}
                     alt="School recycling program"

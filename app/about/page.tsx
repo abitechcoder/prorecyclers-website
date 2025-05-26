@@ -13,11 +13,9 @@ export default function AboutPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  About EcoCycle Solutions
-                </h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Prorecycler</h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Our journey, mission, and commitment to creating a sustainable future through innovative recycling
+                  Transforming Nigeria's waste challenges into sustainable opportunities through innovative recycling
                   solutions.
                 </p>
               </div>
@@ -27,7 +25,7 @@ export default function AboutPage() {
                 src="/images/team-working.png"
                 width={600}
                 height={400}
-                alt="EcoCycle Solutions team"
+                alt="Prorecycler team"
                 className="rounded-lg object-cover"
               />
             </div>
@@ -44,7 +42,7 @@ export default function AboutPage() {
                 src="/images/recycling-facility.png"
                 width={600}
                 height={400}
-                alt="EcoCycle Solutions facility"
+                alt="Prorecycler facility"
                 className="rounded-lg object-cover"
               />
             </div>
@@ -52,19 +50,20 @@ export default function AboutPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
                 <p className="text-muted-foreground">
-                  Founded in 2010, EcoCycle Solutions began with a simple mission: to make recycling accessible,
-                  efficient, and impactful. What started as a small operation with just three employees has grown into a
-                  leading recycling company serving thousands of businesses and individuals across the region.
+                  Prorecycler is a Badagry-based recycling and waste management company dedicated to transforming
+                  Nigeria's waste challenges into sustainable opportunities. We specialize in the collection, sorting,
+                  and processing of plastics, paper, metals, and electronic waste, offering practical and scalable
+                  solutions that reduce pollution and promote environmental responsibility.
                 </p>
                 <p className="text-muted-foreground">
-                  Our founders, environmental scientists with a passion for sustainability, recognized the growing waste
-                  crisis and decided to take action. They built EcoCycle Solutions on the principle that proper
-                  recycling is not just an environmental responsibility but an opportunity to create a circular economy
-                  that benefits everyone.
+                  At Prorecycler, we believe that sustainability starts with action. Through our innovative recycling
+                  programs and strong community engagement, we empower individuals, schools, and businesses to
+                  participate in the circular economy. From doorstep pickups to bulk corporate recycling, we tailor our
+                  services to meet the diverse needs of the Badagry community and beyond.
                 </p>
                 <p className="text-muted-foreground">
-                  Today, we continue to innovate and expand our services, always staying true to our core values and
-                  commitment to environmental stewardship.
+                  Our team is passionate about reducing environmental impact, creating green jobs, and educating the
+                  public on responsible waste practices.
                 </p>
               </div>
             </div>
@@ -89,8 +88,8 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-xl font-bold">Our Mission</h3>
                   <p className="text-muted-foreground">
-                    To provide innovative, efficient, and accessible recycling solutions that reduce waste, conserve
-                    natural resources, and create a more sustainable future for generations to come.
+                    To provide efficient, eco-friendly recycling solutions while empowering communities through
+                    education, innovation, and accessible services.
                   </p>
                 </div>
               </CardContent>
@@ -102,10 +101,7 @@ export default function AboutPage() {
                     <Recycle className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold">Our Vision</h3>
-                  <p className="text-muted-foreground">
-                    A world where waste is minimized, resources are conserved, and recycling is an integral part of
-                    every community, business, and household, contributing to a cleaner, healthier planet.
-                  </p>
+                  <p className="text-muted-foreground">To lead the transition to a cleaner, waste-free Nigeria.</p>
                 </div>
               </CardContent>
             </Card>
@@ -133,8 +129,8 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-xl font-bold">Environmental Stewardship</h3>
                   <p className="text-muted-foreground">
-                    We are committed to protecting and preserving our natural environment through responsible recycling
-                    practices and continuous innovation.
+                    We are committed to protecting Nigeria's natural environment through responsible recycling practices
+                    and continuous innovation.
                   </p>
                 </div>
               </CardContent>
@@ -148,7 +144,7 @@ export default function AboutPage() {
                   <h3 className="text-xl font-bold">Community Focus</h3>
                   <p className="text-muted-foreground">
                     We believe in building strong relationships with the communities we serve, providing education and
-                    resources to promote sustainable practices.
+                    resources to promote sustainable practices across Nigeria.
                   </p>
                 </div>
               </CardContent>
@@ -190,7 +186,7 @@ export default function AboutPage() {
                   <h3 className="text-xl font-bold">Innovation</h3>
                   <p className="text-muted-foreground">
                     We continuously seek new and better ways to recycle materials, reduce waste, and improve our
-                    services to meet evolving environmental challenges.
+                    services to meet Nigeria's evolving environmental challenges.
                   </p>
                 </div>
               </CardContent>
@@ -204,7 +200,7 @@ export default function AboutPage() {
                   <h3 className="text-xl font-bold">Collaboration</h3>
                   <p className="text-muted-foreground">
                     We believe in the power of partnerships and work closely with businesses, communities, and
-                    organizations to achieve greater environmental impact.
+                    organizations to achieve greater environmental impact across Nigeria.
                   </p>
                 </div>
               </CardContent>
@@ -236,10 +232,10 @@ export default function AboutPage() {
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-bold">Dr. Emily Chen</h3>
-                <p className="text-sm text-muted-foreground">CEO & Co-Founder</p>
+                <h3 className="text-xl font-bold">Adunni Ogundimu</h3>
+                <p className="text-sm text-muted-foreground">CEO & Founder</p>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Environmental scientist with 15+ years of experience in waste management and sustainability.
+                  Environmental engineer with 10+ years of experience in waste management and sustainability in Nigeria.
                 </p>
               </div>
             </div>
@@ -254,10 +250,11 @@ export default function AboutPage() {
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-bold">Marcus Johnson</h3>
+                <h3 className="text-xl font-bold">Emeka Nwosu</h3>
                 <p className="text-sm text-muted-foreground">COO & Co-Founder</p>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Operations expert with a background in logistics and supply chain management.
+                  Operations expert with extensive background in logistics and supply chain management across West
+                  Africa.
                 </p>
               </div>
             </div>
@@ -272,10 +269,10 @@ export default function AboutPage() {
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-bold">Dr. James Rodriguez</h3>
-                <p className="text-sm text-muted-foreground">CTO</p>
+                <h3 className="text-xl font-bold">Dr. Kemi Adebayo</h3>
+                <p className="text-sm text-muted-foreground">Head of Innovation</p>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Materials scientist specializing in recycling technologies and process optimization.
+                  Materials scientist specializing in recycling technologies and sustainable waste processing solutions.
                 </p>
               </div>
             </div>
@@ -290,7 +287,7 @@ export default function AboutPage() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Join Our Mission</h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Partner with us to create a more sustainable future for our planet
+                Partner with us to create a cleaner, waste-free Nigeria
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">

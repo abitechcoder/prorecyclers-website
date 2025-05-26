@@ -23,7 +23,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <Recycle className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-primary">EcoCycle Solutions</span>
+            <span className="text-xl font-bold text-primary">Prorecycler</span>
           </Link>
         </div>
 
@@ -40,7 +40,7 @@ export default function Header() {
           ))}
           <Button asChild className="bg-[#25D366] hover:bg-[#128C7E]">
             <a
-              href="https://wa.me/15551234567?text=Hi%20EcoCycle%20Solutions,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
+              href="https://wa.me/2348012345678?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
@@ -86,7 +86,7 @@ export default function Header() {
               ))}
               <Button asChild className="bg-[#25D366] hover:bg-[#128C7E]">
                 <a
-                  href="https://wa.me/15551234567?text=Hi%20EcoCycle%20Solutions,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
+                  href="https://wa.me/2348012345678?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

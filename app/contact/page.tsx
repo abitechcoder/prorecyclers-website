@@ -59,7 +59,8 @@ export default function ContactPage() {
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h1>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Have questions or need more information? We're here to help.
+                Have questions or need more information? We're here to help you with your recycling needs in Badagry and
+                beyond.
               </p>
             </div>
           </div>
@@ -78,8 +79,8 @@ export default function ContactPage() {
                   </div>
                   <CardTitle className="text-xl">Phone</CardTitle>
                   <CardDescription>
-                    <a href="tel:+15551234567" className="text-primary hover:underline">
-                      (555) 123-4567
+                    <a href="tel:+2348012345678" className="text-primary hover:underline">
+                      +234 801 234 5678
                     </a>
                   </CardDescription>
                 </div>
@@ -93,8 +94,8 @@ export default function ContactPage() {
                   </div>
                   <CardTitle className="text-xl">Email</CardTitle>
                   <CardDescription>
-                    <a href="mailto:info@ecocyclesolutions.com" className="text-primary hover:underline">
-                      info@ecocyclesolutions.com
+                    <a href="mailto:info@prorecycler.ng" className="text-primary hover:underline">
+                      info@prorecycler.ng
                     </a>
                   </CardDescription>
                 </div>
@@ -108,9 +109,9 @@ export default function ContactPage() {
                   </div>
                   <CardTitle className="text-xl">Address</CardTitle>
                   <CardDescription>
-                    123 Green Street
+                    15 Recycling Avenue
                     <br />
-                    Eco City, EC 12345
+                    Badagry, Lagos State, Nigeria
                   </CardDescription>
                 </div>
               </CardContent>
@@ -145,9 +146,7 @@ export default function ContactPage() {
                     <CheckCircle className="h-8 w-8 text-primary" />
                   </div>
                   <CardTitle className="text-center text-2xl">Message Sent Successfully!</CardTitle>
-                  <CardDescription className="text-center">
-                    Thank you for contacting EcoCycle Solutions.
-                  </CardDescription>
+                  <CardDescription className="text-center">Thank you for contacting Prorecycler.</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <Alert>
@@ -275,7 +274,7 @@ export default function ContactPage() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter">Find Us</h2>
               <p className="max-w-[700px] text-muted-foreground">
-                Visit our facility to learn more about our recycling process
+                Visit our facility in Badagry to learn more about our recycling process
               </p>
             </div>
           </div>

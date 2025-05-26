@@ -9,10 +9,11 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2">
               <Recycle className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold text-primary">EcoCycle Solutions</span>
+              <span className="text-lg font-bold text-primary">Prorecycler</span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">
-              Committed to creating a sustainable future through innovative recycling solutions.
+              Transforming Nigeria's waste challenges into sustainable opportunities through innovative recycling
+              solutions.
             </p>
             <div className="mt-6 flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-primary">
@@ -98,22 +99,24 @@ export default function Footer() {
             <ul className="mt-4 space-y-2">
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span className="text-sm text-muted-foreground">123 Green Street, Eco City, EC 12345</span>
+                <span className="text-sm text-muted-foreground">
+                  15 Recycling Avenue, Badagry, Lagos State, Nigeria
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-sm text-muted-foreground">(555) 123-4567</span>
+                <span className="text-sm text-muted-foreground">+234 801 234 5678</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-sm text-muted-foreground">info@ecocyclesolutions.com</span>
+                <span className="text-sm text-muted-foreground">info@prorecycler.ng</span>
               </li>
             </ul>
           </div>
         </div>
         <div className="mt-12 border-t pt-6">
           <p className="text-center text-xs text-muted-foreground">
-            © {new Date().getFullYear()} EcoCycle Solutions. All rights reserved.
+            © {new Date().getFullYear()} Prorecycler. All rights reserved.
           </p>
         </div>
       </div>

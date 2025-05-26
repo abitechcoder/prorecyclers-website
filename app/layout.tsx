@@ -9,12 +9,12 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "EcoCycle Solutions | Sustainable Recycling Services",
+  title: "Prorecycler | Sustainable Recycling Services in Badagry, Nigeria",
   description:
-    "EcoCycle Solutions provides eco-friendly recycling services for plastic, paper, metal, e-waste and more. Schedule a pickup today and join our mission for a greener planet.",
+    "Prorecycler provides eco-friendly recycling services for plastic, paper, metal, e-waste and more in Badagry, Nigeria. Schedule a pickup today and join our mission for a cleaner, waste-free Nigeria.",
   keywords:
-    "recycling, eco-friendly, sustainability, waste management, plastic recycling, paper recycling, metal recycling, e-waste",
-    generator: 'v0.dev'
+    "recycling, eco-friendly, sustainability, waste management, plastic recycling, paper recycling, metal recycling, e-waste, Nigeria, Badagry, circular economy",
+  generator: "v0.dev",
 }
 
 export default function RootLayout({

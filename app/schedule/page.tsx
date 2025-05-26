@@ -102,7 +102,7 @@ export default function SchedulePage() {
             </div>
             <CardTitle className="text-center text-2xl">Pickup Scheduled Successfully!</CardTitle>
             <CardDescription className="text-center">
-              Thank you for scheduling a recycling pickup with EcoCycle Solutions.
+              Thank you for scheduling a recycling pickup with Prorecycler.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">

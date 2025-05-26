@@ -15,11 +15,11 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Sustainable Recycling for a Greener Tomorrow
+                  Recycling to Changing Life
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Join EcoCycle Solutions in our mission to create a cleaner, more sustainable world through innovative
-                  recycling solutions.
+                  Join Prorecycler in transforming Nigeria's waste challenges into sustainable opportunities through
+                  innovative recycling solutions in Badagry and beyond.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -52,7 +52,7 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Our Recycling Services</h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Comprehensive recycling solutions for all your waste management needs
+                Comprehensive recycling solutions tailored for the Nigerian community
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Responsible collection and processing of all types of plastic waste.
+                  Collection and processing of plastic waste to reduce pollution in Nigerian communities.
                 </p>
               </CardContent>
             </Card>
@@ -97,7 +97,7 @@ export default function Home() {
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Efficient recycling of paper products to reduce deforestation.
+                  Efficient paper recycling to preserve Nigeria's natural resources and forests.
                 </p>
               </CardContent>
             </Card>
@@ -119,7 +119,7 @@ export default function Home() {
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Collection and processing of various metal materials for reuse.
+                  Recovery and processing of metal materials for sustainable reuse.
                 </p>
               </CardContent>
             </Card>
@@ -141,7 +141,7 @@ export default function Home() {
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Safe disposal and recycling of electronic waste and components.
+                  Safe disposal and recycling of electronic waste to protect our environment.
                 </p>
               </CardContent>
             </Card>
@@ -161,26 +161,26 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Our Environmental Impact</h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Making a measurable difference in our community and planet
+                Making a measurable difference in Badagry and across Nigeria
               </p>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 mt-12">
             <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-              <div className="text-4xl font-bold text-primary">5M+</div>
-              <p className="text-sm text-center text-muted-foreground">Pounds of waste recycled annually</p>
+              <div className="text-4xl font-bold text-primary">2M+</div>
+              <p className="text-sm text-center text-muted-foreground">Kilograms of waste recycled annually</p>
             </div>
             <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-              <div className="text-4xl font-bold text-primary">10K+</div>
+              <div className="text-4xl font-bold text-primary">500+</div>
               <p className="text-sm text-center text-muted-foreground">Trees saved through paper recycling</p>
             </div>
             <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-              <div className="text-4xl font-bold text-primary">3K+</div>
+              <div className="text-4xl font-bold text-primary">1.5K+</div>
               <p className="text-sm text-center text-muted-foreground">Tons of CO2 emissions prevented</p>
             </div>
             <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
-              <div className="text-4xl font-bold text-primary">15K+</div>
-              <p className="text-sm text-center text-muted-foreground">Happy customers served</p>
+              <div className="text-4xl font-bold text-primary">5K+</div>
+              <p className="text-sm text-center text-muted-foreground">Community members served</p>
             </div>
           </div>
           <div className="flex justify-center mt-8">
@@ -196,9 +196,9 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">What Our Customers Say</h2>
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">What Our Community Says</h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Hear from businesses and individuals who have partnered with us
+                Hear from businesses and individuals in Badagry who have partnered with us
               </p>
             </div>
           </div>
@@ -219,11 +219,11 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "EcoCycle Solutions has transformed our company's waste management process. Their efficient
-                          service and commitment to sustainability align perfectly with our corporate values."
+                          "Prorecycler has revolutionized our waste management. Their reliable service and commitment to
+                          sustainability perfectly align with our company's environmental goals."
                         </p>
-                        <p className="mt-2 font-semibold">Sarah Johnson</p>
-                        <p className="text-xs text-muted-foreground">Green Office Solutions</p>
+                        <p className="mt-2 font-semibold">Adebayo Ogundimu</p>
+                        <p className="text-xs text-muted-foreground">Badagry Manufacturing Ltd</p>
                       </div>
                     </div>
                   </CardContent>
@@ -236,11 +236,11 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "As a restaurant chain, we generate significant waste. EcoCycle's comprehensive recycling
-                          program has helped us reduce our environmental footprint substantially."
+                          "As a hotel business, we generate significant waste. Prorecycler's comprehensive recycling
+                          program has helped us reduce our environmental footprint significantly."
                         </p>
-                        <p className="mt-2 font-semibold">Michael Chen</p>
-                        <p className="text-xs text-muted-foreground">Fresh Eats Restaurant Group</p>
+                        <p className="mt-2 font-semibold">Fatima Ibrahim</p>
+                        <p className="text-xs text-muted-foreground">Seaside Resort Badagry</p>
                       </div>
                     </div>
                   </CardContent>
@@ -253,11 +253,11 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "The detailed reporting and analytics provided by EcoCycle Solutions have been invaluable for
-                          our sustainability reporting and corporate social responsibility initiatives."
+                          "The detailed reporting and community education provided by Prorecycler have been invaluable
+                          for our corporate social responsibility initiatives."
                         </p>
-                        <p className="mt-2 font-semibold">Amanda Rodriguez</p>
-                        <p className="text-xs text-muted-foreground">Eco Retail Stores</p>
+                        <p className="mt-2 font-semibold">Chinedu Okoro</p>
+                        <p className="text-xs text-muted-foreground">Lagos West Trading Company</p>
                       </div>
                     </div>
                   </CardContent>
@@ -274,11 +274,11 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "The scheduled pickup service is so convenient! I love knowing that my recyclables are being
-                          properly processed and not ending up in a landfill."
+                          "The doorstep pickup service is incredibly convenient! I'm proud to contribute to a cleaner
+                          Badagry through proper recycling."
                         </p>
-                        <p className="mt-2 font-semibold">David Thompson</p>
-                        <p className="text-xs text-muted-foreground">Homeowner</p>
+                        <p className="mt-2 font-semibold">Mrs. Blessing Adeyemi</p>
+                        <p className="text-xs text-muted-foreground">Badagry Resident</p>
                       </div>
                     </div>
                   </CardContent>
@@ -291,11 +291,11 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "I was looking for a responsible way to dispose of my old electronics. EcoCycle made the
-                          process easy and gave me peace of mind about data security."
+                          "I needed to dispose of old electronics responsibly. Prorecycler made the process easy and
+                          gave me confidence about data security."
                         </p>
-                        <p className="mt-2 font-semibold">Emily Wilson</p>
-                        <p className="text-xs text-muted-foreground">Tech Professional</p>
+                        <p className="mt-2 font-semibold">Tunde Fashola</p>
+                        <p className="text-xs text-muted-foreground">IT Professional</p>
                       </div>
                     </div>
                   </CardContent>
@@ -308,11 +308,11 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "The educational resources provided by EcoCycle have helped our family become more conscious
-                          about waste reduction and proper recycling practices."
+                          "The educational resources from Prorecycler have helped our family become more conscious about
+                          waste reduction and proper recycling practices."
                         </p>
-                        <p className="mt-2 font-semibold">Robert & Lisa Garcia</p>
-                        <p className="text-xs text-muted-foreground">Family of Four</p>
+                        <p className="mt-2 font-semibold">Mr. & Mrs. Okafor</p>
+                        <p className="text-xs text-muted-foreground">Family of Five</p>
                       </div>
                     </div>
                   </CardContent>
@@ -330,8 +330,7 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to Make a Difference?</h2>
               <p className="max-w-[700px] md:text-xl">
-                Join thousands of environmentally conscious individuals and businesses in our mission for a greener
-                planet.
+                Join thousands of environmentally conscious Nigerians in our mission for a cleaner, waste-free future.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -358,14 +357,14 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-2xl font-bold tracking-tighter md:text-3xl">Our Certifications & Partners</h2>
               <p className="max-w-[700px] text-muted-foreground">
-                Trusted by leading environmental organizations and businesses
+                Trusted by leading Nigerian environmental organizations and businesses
               </p>
             </div>
           </div>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-8 md:gap-12">
             <div className="flex flex-col items-center space-y-2">
               <Award className="h-12 w-12 text-muted-foreground" />
-              <span className="text-sm font-medium">Green Business Certified</span>
+              <span className="text-sm font-medium">NESREA Certified</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <Award className="h-12 w-12 text-muted-foreground" />
@@ -373,11 +372,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center space-y-2">
               <Award className="h-12 w-12 text-muted-foreground" />
-              <span className="text-sm font-medium">EPA Recognized</span>
+              <span className="text-sm font-medium">Lagos State Approved</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <Award className="h-12 w-12 text-muted-foreground" />
-              <span className="text-sm font-medium">Sustainable Business Alliance</span>
+              <span className="text-sm font-medium">Green Nigeria Initiative</span>
             </div>
           </div>
         </div>

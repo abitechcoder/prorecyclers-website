@@ -9,17 +9,33 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="hero-pattern py-16 md:py-24">
-        <div className="container px-4 md:px-6">
+      <section className="relative py-16 md:py-24 lg:py-32">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/can-pickup.png"
+            alt="Community cleanup effort"
+            fill
+            className="object-cover object-center"
+            priority
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgG..."
+          />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Recycling to Changing Life
+            <div className="flex flex-col justify-center space-y-8 text-white">
+              <div className="space-y-4">
+                <h1 className="text-3xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
+                  Transform Waste Into a Greener Future
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Join Prorecycler in transforming Nigeria's waste challenges into sustainable opportunities through
-                  innovative recycling solutions in Badagry and beyond.
+                <p className="max-w-[600px] md:text-xl text-gray-200">
+                  Join Prorecycler in turning Nigeria's waste challenges into
+                  sustainable opportunities.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -31,19 +47,10 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="mx-auto lg:mx-0 relative">
-              <Image
-                src="/images/hero-recycling.png"
-                width={550}
-                height={550}
-                alt="Recycling process illustration"
-                className="rounded-lg object-cover"
-                priority
-              />
-            </div>
           </div>
         </div>
       </section>
+
 
       {/* Services Overview */}
       <section className="py-16 md:py-24">

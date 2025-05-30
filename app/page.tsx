@@ -38,7 +38,7 @@ export default function Home() {
                   sustainable opportunities.
                 </p>
               </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <div className="flex flex-col gap-4 min-[400px]:flex-row">
                 <Button asChild size="lg">
                   <Link href="/schedule">Schedule Pickup</Link>
                 </Button>
@@ -63,74 +63,65 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mt-12">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
             <Card>
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
+                <Image
+                  src="/images/plastic-recycling.png"
+                  width={300}
+                  height={160}
+                  alt="Plastic recycling"
+                  className="h-full w-full object-cover rounded-md"
+                />
+              </div>
+              <CardHeader className="py-0 mb-2">
                 <CardTitle className="text-lg font-medium">Plastic Recycling</CardTitle>
-                <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                  <Recycle className="h-5 w-5 text-primary" />
-                </div>
               </CardHeader>
               <CardContent>
-                <div className="mb-4 h-40 w-full overflow-hidden rounded-md">
-                  <Image
-                    src="/images/plastic-recycling.png"
-                    width={300}
-                    height={160}
-                    alt="Plastic recycling"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
                 <p className="text-sm text-muted-foreground">
                   Collection and processing of plastic waste to reduce pollution in Nigerian communities.
                 </p>
               </CardContent>
             </Card>
             <Card>
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-lg font-medium">Paper Recycling</CardTitle>
-                <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                  <Leaf className="h-5 w-5 text-primary" />
-                </div>
+              <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
+                <Image
+                  src="/images/carton-recycling.jpg"
+                  width={300}
+                  height={160}
+                  alt="Carboard recycling"
+                  className="h-full w-full object-cover rounded-md"
+                />
+              </div>
+              <CardHeader className="py-0 mb-2">
+                <CardTitle className="text-lg font-medium">Cardboard Recycling</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="mb-4 h-40 w-full overflow-hidden rounded-md">
-                  <Image
-                    src="/images/paper-recycling.png"
-                    width={300}
-                    height={160}
-                    alt="Paper recycling"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
                 <p className="text-sm text-muted-foreground">
-                  Efficient paper recycling to preserve Nigeria's natural resources and forests.
+                  Efficient cardboard recycling to preserve Nigeria's natural resources and forests.
                 </p>
               </CardContent>
             </Card>
             <Card>
-              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-lg font-medium">Metal Recycling</CardTitle>
-                <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                  <Truck className="h-5 w-5 text-primary" />
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="mb-4 h-40 w-full overflow-hidden rounded-md">
+              <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
                   <Image
-                    src="/images/metal-recycling.png"
+                    src="/images/can-recycling.jpg"
                     width={300}
                     height={160}
-                    alt="Metal recycling"
-                    className="h-full w-full object-cover"
+                    alt="Can recycling"
+                    className="h-full w-full object-cover rounded-md"
                   />
                 </div>
+              <CardHeader className="py-0 mb-2">
+                <CardTitle className="text-lg font-medium">Can Recycling</CardTitle>
+              </CardHeader>
+              <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Recovery and processing of metal materials for sustainable reuse.
+                  Recovery and processing of of soda cans and food cans for sustainable reuse.
                 </p>
               </CardContent>
             </Card>
-            <Card>
+            {/* <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-lg font-medium">E-Waste Recycling</CardTitle>
                 <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
@@ -151,7 +142,7 @@ export default function Home() {
                   Safe disposal and recycling of electronic waste to protect our environment.
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
           <div className="flex justify-center mt-8">
             <Button asChild variant="outline">

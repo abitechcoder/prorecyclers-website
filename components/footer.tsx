@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin, Recycle } from "lucide-react"
 
 export default function Footer() {
@@ -7,10 +8,7 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2">
-              <Recycle className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold text-primary">Prorecycler</span>
-            </div>
+            <Image src={"/images/logo.png"} alt="Prorecycler Logo image" width={100} height={80}/>
             <p className="mt-4 text-sm text-muted-foreground">
               Transforming Nigeria's waste challenges into sustainable opportunities through innovative recycling
               solutions.
@@ -74,17 +72,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services#paper" className="text-sm text-muted-foreground hover:text-primary">
-                  Paper Recycling
+                  Cardboard Recycling
                 </Link>
               </li>
               <li>
                 <Link href="/services#metal" className="text-sm text-muted-foreground hover:text-primary">
-                  Metal Recycling
-                </Link>
-              </li>
-              <li>
-                <Link href="/services#ewaste" className="text-sm text-muted-foreground hover:text-primary">
-                  E-Waste Recycling
+                  Can Recycling
                 </Link>
               </li>
               <li>
@@ -96,27 +89,27 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold">Contact Us</h3>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 space-y-4">
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  15 Recycling Avenue, Badagry, Lagos State, Nigeria
+                  25, Opa Farm Street, Off Agelasho Ajara Vetho, Badagry, Lagos State.
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-sm text-muted-foreground">+234 801 234 5678</span>
+                <p className="text-sm text-muted-foreground">+234 904 0020 889,<br/> +234 810 9891 479</p>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-sm text-muted-foreground">info@prorecycler.ng</span>
+                <span className="text-sm text-muted-foreground">prorecyclersng@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
         <div className="mt-12 border-t pt-6">
           <p className="text-center text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Prorecycler. All rights reserved.
+            © 2025 Prorecycler. All rights reserved.
           </p>
         </div>
       </div>

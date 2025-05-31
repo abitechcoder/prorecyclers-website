@@ -78,9 +78,12 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-xl">Phone</CardTitle>
-                  <CardDescription>
-                    <a href="tel:+2348012345678" className="text-primary hover:underline">
-                      +234 801 234 5678
+                  <CardDescription className="flex flex-col gap-2">
+                    <a href="tel:+2349040020889" className="text-primary hover:underline">
+                      +234 904 0020 889
+                    </a>
+                    <a href="tel:+2348109891479" className="text-primary hover:underline">
+                      +234 810 9891 479
                     </a>
                   </CardDescription>
                 </div>
@@ -95,7 +98,7 @@ export default function ContactPage() {
                   <CardTitle className="text-xl">Email</CardTitle>
                   <CardDescription>
                     <a href="mailto:info@prorecycler.ng" className="text-primary hover:underline">
-                      info@prorecycler.ng
+                      prorecyclersng@gmail.com
                     </a>
                   </CardDescription>
                 </div>
@@ -109,9 +112,7 @@ export default function ContactPage() {
                   </div>
                   <CardTitle className="text-xl">Address</CardTitle>
                   <CardDescription>
-                    15 Recycling Avenue
-                    <br />
-                    Badagry, Lagos State, Nigeria
+                    25, Opa Farm Street, Off Agelasho Ajara Vetho, Badagry, Lagos State.
                   </CardDescription>
                 </div>
               </CardContent>
@@ -179,7 +180,7 @@ export default function ContactPage() {
                             <FormItem>
                               <FormLabel>Full Name</FormLabel>
                               <FormControl>
-                                <Input placeholder="John Doe" {...field} />
+                                <Input placeholder="Enter your full name" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -192,7 +193,7 @@ export default function ContactPage() {
                             <FormItem>
                               <FormLabel>Email</FormLabel>
                               <FormControl>
-                                <Input placeholder="john.doe@example.com" {...field} />
+                                <Input placeholder="Enter your email" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -207,7 +208,7 @@ export default function ContactPage() {
                             <FormItem>
                               <FormLabel>Phone (Optional)</FormLabel>
                               <FormControl>
-                                <Input placeholder="(555) 123-4567" {...field} />
+                                <Input placeholder="Phone number" {...field} />
                               </FormControl>
                               <FormMessage />
                             </FormItem>
@@ -278,14 +279,8 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-          <div className="aspect-video w-full overflow-hidden rounded-lg border">
-            <Image
-              src="/images/badagry-map.png"
-              width={1200}
-              height={675}
-              alt="Map of EcoCycle Solutions location"
-              className="h-full w-full object-cover"
-            />
+          <div className="aspect-video w-full h-[300px] lg:h-[450px] overflow-hidden rounded-lg border">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.613496174295!2d2.8945649151025603!3d6.443647906091379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b63aae5960b1b%3A0x87c549469e91737a!2sOpa%20Farm%20Rd%2C%20Isalu%20103242%2C%20Lagos!5e0!3m2!1sen!2sng!4v1748686965326!5m2!1sen!2sng" className="w-full h-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>

@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Recycle } from "lucide-react"
+import Image from "next/image"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -19,11 +20,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 py-10 items-center justify-between">
+      <div className="container flex h-16 py-10 px-4 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <Recycle className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-primary">Prorecycler</span>
+            <Image src={"/images/logo.png"} alt="Prorecycler Logo image" width={100} height={80}/>
+            {/* <Recycle className="h-8 w-8 text-primary" />
+            <span className="text-xl font-bold text-primary">Prorecycler</span> */}
           </Link>
         </div>
 
@@ -52,8 +54,8 @@ export default function Header() {
 
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
-              <Menu className="h-6 w-6" />
+            <Button variant="default" className="h-8 w-8">
+              <Menu className="text-white" />
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>

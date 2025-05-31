@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Recycle, Leaf, Truck, BarChart, Users, Award } from "lucide-react"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export default function Home() {
   return (
@@ -75,7 +76,7 @@ export default function Home() {
                 />
               </div>
               <CardHeader className="py-0 mb-2">
-                <CardTitle className="text-lg font-medium">Plastic Recycling</CardTitle>
+                <CardTitle className="text-lg font-semibold">Plastic Recycling</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -94,7 +95,7 @@ export default function Home() {
                 />
               </div>
               <CardHeader className="py-0 mb-2">
-                <CardTitle className="text-lg font-medium">Cardboard Recycling</CardTitle>
+                <CardTitle className="text-lg font-semibold">Cardboard Recycling</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -104,16 +105,16 @@ export default function Home() {
             </Card>
             <Card>
               <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
-                  <Image
-                    src="/images/can-recycling.jpg"
-                    width={300}
-                    height={160}
-                    alt="Can recycling"
-                    className="h-full w-full object-cover rounded-md"
-                  />
-                </div>
+                <Image
+                  src="/images/can-recycling.jpg"
+                  width={300}
+                  height={160}
+                  alt="Can recycling"
+                  className="h-full w-full object-cover rounded-md"
+                />
+              </div>
               <CardHeader className="py-0 mb-2">
-                <CardTitle className="text-lg font-medium">Can Recycling</CardTitle>
+                <CardTitle className="text-lg font-semibold">Can Recycling</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -145,7 +146,7 @@ export default function Home() {
             </Card> */}
           </div>
           <div className="flex justify-center mt-8">
-            <Button asChild variant="outline">
+            <Button asChild variant="default">
               <Link href="/services">View All Services</Link>
             </Button>
           </div>
@@ -153,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* Impact Stats */}
-      <section className="bg-primary/5 py-16 md:py-24">
+      <section className="bg-primary/10 py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -164,26 +165,26 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 mt-12">
-            <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
+            <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background shadow-sm">
               <div className="text-4xl font-bold text-primary">2M+</div>
               <p className="text-sm text-center text-muted-foreground">Kilograms of waste recycled annually</p>
             </div>
-            <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
+            <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background shadow-sm">
               <div className="text-4xl font-bold text-primary">500+</div>
               <p className="text-sm text-center text-muted-foreground">Trees saved through paper recycling</p>
             </div>
-            <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
+            <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background shadow-sm">
               <div className="text-4xl font-bold text-primary">1.5K+</div>
               <p className="text-sm text-center text-muted-foreground">Tons of CO2 emissions prevented</p>
             </div>
-            <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background">
+            <div className="flex flex-col items-center space-y-2 border rounded-lg p-6 bg-background shadow-sm">
               <div className="text-4xl font-bold text-primary">5K+</div>
               <p className="text-sm text-center text-muted-foreground">Community members served</p>
             </div>
           </div>
           <div className="flex justify-center mt-8">
-            <Button asChild variant="outline">
-              <Link href="/impact">Learn More About Our Impact</Link>
+            <Button asChild variant="default">
+              <Link href="/impact">Learn More</Link>
             </Button>
           </div>
         </div>
@@ -212,9 +213,10 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <Users className="h-5 w-5 text-primary" />
-                      </div>
+                      <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" />
+                        <AvatarFallback className="bg-primary/20">AO</AvatarFallback>
+                      </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
                           "Prorecycler has revolutionized our waste management. Their reliable service and commitment to
@@ -229,9 +231,10 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <Users className="h-5 w-5 text-primary" />
-                      </div>
+                      <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" />
+                        <AvatarFallback className="bg-primary/20">FI</AvatarFallback>
+                      </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
                           "As a hotel business, we generate significant waste. Prorecycler's comprehensive recycling
@@ -246,9 +249,10 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <Users className="h-5 w-5 text-primary" />
-                      </div>
+                      <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" />
+                        <AvatarFallback className="bg-primary/20">CO</AvatarFallback>
+                      </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
                           "The detailed reporting and community education provided by Prorecycler have been invaluable
@@ -267,9 +271,10 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <Users className="h-5 w-5 text-primary" />
-                      </div>
+                      <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" />
+                        <AvatarFallback className="bg-primary/20">BA</AvatarFallback>
+                      </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
                           "The doorstep pickup service is incredibly convenient! I'm proud to contribute to a cleaner
@@ -284,9 +289,10 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <Users className="h-5 w-5 text-primary" />
-                      </div>
+                      <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" />
+                        <AvatarFallback className="bg-primary/20">TF</AvatarFallback>
+                      </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
                           "I needed to dispose of old electronics responsibly. Prorecycler made the process easy and
@@ -301,9 +307,10 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
-                      <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center">
-                        <Users className="h-5 w-5 text-primary" />
-                      </div>
+                      <Avatar>
+                        <AvatarImage src="https://github.com/shadcn.png" />
+                        <AvatarFallback className="bg-primary/20">OK</AvatarFallback>
+                      </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
                           "The educational resources from Prorecycler have helped our family become more conscious about

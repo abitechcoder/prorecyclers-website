@@ -8,27 +8,24 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-primary/5 py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Prorecycler</h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Transforming Nigeria's waste challenges into sustainable opportunities through innovative recycling
-                  solutions.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto lg:mx-0">
-              <Image
-                src="/images/team-working.png"
-                width={600}
-                height={400}
-                alt="Prorecycler team"
-                className="rounded-lg object-cover"
-              />
-            </div>
+      <section className="relative py-16 md:py-24">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/cleanup.jpg"
+            fill
+            alt="A boy and a girl picking up cans in a park"
+            className="object-center object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/70"></div>
+        </div>
+        <div className="relative z-10 container px-4 md:px-6">
+          <div className="flex flex-col items-center space-y-3">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-300">About Prorecycler</h1>
+              <p className="max-w-[600px] md:text-xl text-white">
+                Transforming Nigeria's waste challenges into sustainable opportunities through innovative recycling
+                solutions.
+              </p>
           </div>
         </div>
       </section>
@@ -39,7 +36,7 @@ export default function AboutPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="order-2 lg:order-1">
               <Image
-                src="/images/recycling-facility.png"
+                src="/images/facility.jpeg"
                 width={600}
                 height={400}
                 alt="Prorecycler facility"

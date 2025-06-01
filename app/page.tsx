@@ -182,11 +182,11 @@ export default function Home() {
               <p className="text-sm text-center text-muted-foreground">Community members served</p>
             </div>
           </div>
-          <div className="flex justify-center mt-8">
+          {/* <div className="flex justify-center mt-8">
             <Button asChild variant="default">
               <Link href="/impact">Learn More</Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 

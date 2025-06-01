@@ -11,7 +11,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Impact", href: "/impact" },
+  // { name: "Impact", href: "/impact" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -74,7 +74,7 @@ export default function Header() {
               ))}
               <Button asChild size="lg">
                 <a
-                  href="https://wa.me/2348012345678?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
+                  href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"

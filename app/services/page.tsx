@@ -1,9 +1,19 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Recycle, FileText, Smartphone, Truck, Leaf, Droplet, Trash2, HardDrive } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function ServicesPage() {
   return (
@@ -22,9 +32,12 @@ export default function ServicesPage() {
         </div>
         <div className="relative z-10 container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-3">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-300">Our Recycling Services</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-300">
+              Our Recycling Services
+            </h1>
             <p className="max-w-[600px] md:text-xl text-white">
-              Comprehensive recycling solutions for all your waste management needs, from residential to commercial.
+              Comprehensive recycling solutions for all your waste management
+              needs, from residential to commercial.
             </p>
           </div>
         </div>
@@ -35,15 +48,17 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Our Comprehensive Services</h2>
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                Our Comprehensive Services
+              </h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Explore our range of recycling services designed to meet the needs of individuals, businesses, and
-                communities
+                Explore our range of recycling services designed to meet the
+                needs of individuals, businesses, and communities
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
             <Card id="plastic" className="flex flex-col">
               <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
                 <Image
@@ -55,29 +70,19 @@ export default function ServicesPage() {
                 />
               </div>
               <CardHeader className="py-0 mb-2">
-                <CardTitle className="text-lg font-semibold text-primary">Plastic Recycling</CardTitle>
+                <CardTitle className="text-lg font-semibold text-primary">
+                  Plastic Recycling
+                </CardTitle>
               </CardHeader>
               <CardContent className="flex-1">
                 <p className="text-sm text-muted-foreground">
-                  We accept all types of plastic containers. Our specialized sorting process ensures that each type of plastic is properly processed for maximum recycling efficiency.
+                  We accept all types of plastic containers. Our specialized
+                  sorting process ensures that each type of plastic is properly
+                  processed for maximum recycling efficiency.
                 </p>
-                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-center gap-2">
-                    <Recycle className="h-4 w-4 text-primary" />
-                    <span>PET bottles (water, soda)</span>
-                  </li>
-                  {/* <li className="flex items-center gap-2">
-                    <Recycle className="h-4 w-4 text-primary" />
-                    <span>HDPE containers (milk, detergent)</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Recycle className="h-4 w-4 text-primary" />
-                    <span>PP containers (yogurt, margarine)</span>
-                  </li> */}
-                </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild variant="outline" className="w-full">
+                <Button asChild variant="default" className="w-full">
                   <Link href="/schedule">Schedule Pickup</Link>
                 </Button>
               </CardFooter>
@@ -93,30 +98,20 @@ export default function ServicesPage() {
                 />
               </div>
               <CardHeader className="py-0 mb-2">
-                <CardTitle className="text-lg font-semibold text-primary">Cardboard Recycling</CardTitle>
+                <CardTitle className="text-lg font-semibold text-primary">
+                  Cardboard Recycling
+                </CardTitle>
               </CardHeader>
               <CardContent className="flex-1">
                 <p className="text-sm text-muted-foreground">
-                  Our paper recycling service helps reduce deforestation and conserve natural resources. We accept a
-                  wide range of paper products from your home, ensuring they're properly processed and recycled.
+                  Our cardboard recycling service helps reduce deforestation and
+                  conserve natural resources. We accept a wide range of
+                  cardboard boxes, ensuring they're properly processed and
+                  recycled.
                 </p>
-                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-center gap-2">
-                    <FileText className="h-4 w-4 text-primary" />
-                    <span>Newspapers and magazines</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <FileText className="h-4 w-4 text-primary" />
-                    <span>Office paper and mail</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <FileText className="h-4 w-4 text-primary" />
-                    <span>Cardboard boxes and packaging</span>
-                  </li>
-                </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild variant="outline" className="w-full">
+                <Button asChild variant="default" className="w-full">
                   <Link href="/schedule">Schedule Pickup</Link>
                 </Button>
               </CardFooter>
@@ -132,30 +127,19 @@ export default function ServicesPage() {
                 />
               </div>
               <CardHeader className="py-0 mb-2">
-                <CardTitle className="text-lg font-semibold text-primary">Can Recycling</CardTitle>
+                <CardTitle className="text-lg font-semibold text-primary">
+                  Can Recycling
+                </CardTitle>
               </CardHeader>
               <CardContent className="flex-1">
                 <p className="text-sm text-muted-foreground">
-                  Metal recycling is one of the most efficient forms of recycling, with significant energy savings
-                  compared to mining new materials. We collect and process various metal items from your home.
+                  Can recycling is one of the most efficient forms of recycling,
+                  with significant energy savings compared to mining new
+                  materials. We collect and process various cans from your home.
                 </p>
-                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-center gap-2">
-                    <Truck className="h-4 w-4 text-primary" />
-                    <span>Aluminum cans and foil</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Truck className="h-4 w-4 text-primary" />
-                    <span>Steel and tin cans</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Truck className="h-4 w-4 text-primary" />
-                    <span>Small metal appliances</span>
-                  </li>
-                </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild variant="outline" className="w-full">
+                <Button asChild variant="default" className="w-full">
                   <Link href="/schedule">Schedule Pickup</Link>
                 </Button>
               </CardFooter>
@@ -169,7 +153,9 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">How It Works</h2>
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                How It Works
+              </h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
                 Our simple process makes recycling easy and convenient
               </p>
@@ -182,7 +168,8 @@ export default function ServicesPage() {
               </div>
               <h3 className="mt-4 text-xl font-bold">Schedule</h3>
               <p className="mt-2 text-muted-foreground">
-                Book a pickup online or by phone. Choose a date and time that works for you.
+                Book a pickup online or by phone. Choose a date and time that
+                works for you.
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
@@ -191,7 +178,8 @@ export default function ServicesPage() {
               </div>
               <h3 className="mt-4 text-xl font-bold">Prepare</h3>
               <p className="mt-2 text-muted-foreground">
-                Sort your recyclables according to our guidelines. We'll provide instructions for each material type.
+                Sort your recyclables according to our guidelines. We'll provide
+                instructions for each material type.
               </p>
             </div>
             <div className="flex flex-col items-center text-center">
@@ -200,7 +188,8 @@ export default function ServicesPage() {
               </div>
               <h3 className="mt-4 text-xl font-bold">Recycle</h3>
               <p className="mt-2 text-muted-foreground">
-                Our team will collect your recyclables and ensure they're properly processed and recycled.
+                Our team will collect your recyclables and ensure they're
+                properly processed and recycled.
               </p>
             </div>
           </div>
@@ -212,61 +201,75 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Frequently Asked Questions</h2>
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                Frequently Asked Questions
+              </h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
                 Find answers to common questions about our recycling services
               </p>
             </div>
           </div>
-          <div className="mt-12 grid gap-4 md:grid-cols-2 lg:gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>What items do you accept for recycling?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  We accept a wide range of recyclable materials, including plastic containers, paper products, metal
-                  items, glass containers, electronic waste, and more. Each material type has specific guidelines for
-                  preparation, which we provide when you schedule a pickup.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>How often can I schedule pickups?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  For residential customers, we offer on-demand pickups as well as regular scheduled service (weekly,
-                  bi-weekly, or monthly). Commercial customers can customize their collection schedule based on their
-                  specific needs and volume of recyclables.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Do I need to sort my recyclables?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Basic sorting is required to ensure efficient processing. We ask that you separate paper, plastic,
-                  metal, glass, and electronic waste. Detailed sorting instructions will be provided when you schedule
-                  your service.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>What happens to my recyclables after collection?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  After collection, your recyclables are transported to our processing facility where they are sorted,
-                  cleaned, and prepared for recycling. Materials are then sent to specialized recycling facilities where
-                  they are transformed into new products, reducing the need for virgin materials.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="mt-12">
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full lg:w-[70%] lg:mx-auto"
+              defaultValue="item-1"
+            >
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-primary text-lg text-left lg:text-xl">
+                  What items do you accept for recycling?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-muted-foreground text-base lg:text-lg">
+                    We accept a wide range of recyclable materials, including
+                    plastic containers, cardboard boxes and can items. Each material type
+                    has specific guidelines for preparation, which we provide
+                    when you schedule a pickup.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-primary text-xl text-left lg:text-xl">
+                  How often can I schedule pickups?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-muted-foreground text-base lg:text-lg">
+                    For residential customers, we offer on-demand pickups as
+                    well as regular scheduled service (weekly, bi-weekly, or
+                    monthly). Commercial customers can customize their
+                    collection schedule based on their specific needs and volume
+                    of recyclables.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-primary text-xl text-left lg:text-xl">
+                  Do I need to sort my recyclables?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-muted-foreground text-base lg:text-lg">
+                    Basic sorting is required to ensure efficient processing. We
+                    ask that you separate cardboard boxes, plastics and cans. Detailed sorting instructions will be
+                    provided when you schedule a pickup.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-primary text-xl text-left lg:text-xl">
+                  What happens to my recyclables after collection?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="text-muted-foreground text-base lg:text-lg">
+                    After collection, your recyclables are transported to our
+                    processing facility where they are sorted, cleaned, and
+                    prepared for recycling. Materials are then sent to
+                    specialized recycling facilities where they are transformed
+                    into new products, reducing the need for virgin materials.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
@@ -276,11 +279,15 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to Start Recycling?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                Ready to Start Recycling?
+              </h2>
               <p className="max-w-[700px] md:text-xl">
-                Schedule a pickup today and join our mission for a greener planet
+                Schedule a pickup today and join our mission for a greener
+                planet
               </p>
             </div>
+
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg" variant="secondary">
                 <Link href="/schedule">Schedule Pickup</Link>
@@ -298,10 +305,11 @@ export default function ServicesPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-{/* <Tabs defaultValue="residential" className="mt-12">
+{
+  /* <Tabs defaultValue="residential" className="mt-12">
             <div className="flex justify-center">
               <TabsList className="grid w-full max-w-md grid-cols-2">
                 <TabsTrigger value="residential">Residential</TabsTrigger>
@@ -793,4 +801,5 @@ export default function ServicesPage() {
                 </Card>
               </div>
             </TabsContent>
-          </Tabs> */}
+          </Tabs> */
+}

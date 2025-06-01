@@ -9,26 +9,23 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-primary/5 py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Recycling Services</h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Comprehensive recycling solutions for all your waste management needs, from residential to commercial.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto lg:mx-0">
-              <Image
-                src="/images/recycling-facility.png"
-                width={600}
-                height={400}
-                alt="Recycling facility"
-                className="rounded-lg object-cover"
-              />
-            </div>
+      <section className="relative py-16 md:py-24">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/storage-facility.jpeg"
+            fill
+            alt="A boy and a girl picking up cans in a park"
+            className="object-center object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/70"></div>
+        </div>
+        <div className="relative z-10 container px-4 md:px-6">
+          <div className="flex flex-col items-center space-y-3">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-300">Our Recycling Services</h1>
+            <p className="max-w-[600px] md:text-xl text-white">
+              Comprehensive recycling solutions for all your waste management needs, from residential to commercial.
+            </p>
           </div>
         </div>
       </section>
@@ -45,7 +42,266 @@ export default function ServicesPage() {
               </p>
             </div>
           </div>
-          <Tabs defaultValue="residential" className="mt-12">
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Card id="plastic" className="flex flex-col">
+              <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
+                <Image
+                  src="/images/plastic-recycling.jpeg"
+                  width={300}
+                  height={160}
+                  alt="Plastic recycling"
+                  className="h-full w-full object-cover rounded-md"
+                />
+              </div>
+              <CardHeader className="py-0 mb-2">
+                <CardTitle className="text-lg font-semibold text-primary">Plastic Recycling</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <p className="text-sm text-muted-foreground">
+                  We accept all types of plastic containers. Our specialized sorting process ensures that each type of plastic is properly processed for maximum recycling efficiency.
+                </p>
+                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <Recycle className="h-4 w-4 text-primary" />
+                    <span>PET bottles (water, soda)</span>
+                  </li>
+                  {/* <li className="flex items-center gap-2">
+                    <Recycle className="h-4 w-4 text-primary" />
+                    <span>HDPE containers (milk, detergent)</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Recycle className="h-4 w-4 text-primary" />
+                    <span>PP containers (yogurt, margarine)</span>
+                  </li> */}
+                </ul>
+              </CardContent>
+              <CardFooter>
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/schedule">Schedule Pickup</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+            <Card id="paper" className="flex flex-col">
+              <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
+                <Image
+                  src="/images/carton-recycling.jpg"
+                  width={300}
+                  height={160}
+                  alt="Carboard recycling"
+                  className="h-full w-full object-cover rounded-md"
+                />
+              </div>
+              <CardHeader className="py-0 mb-2">
+                <CardTitle className="text-lg font-semibold text-primary">Cardboard Recycling</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <p className="text-sm text-muted-foreground">
+                  Our paper recycling service helps reduce deforestation and conserve natural resources. We accept a
+                  wide range of paper products from your home, ensuring they're properly processed and recycled.
+                </p>
+                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <FileText className="h-4 w-4 text-primary" />
+                    <span>Newspapers and magazines</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FileText className="h-4 w-4 text-primary" />
+                    <span>Office paper and mail</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FileText className="h-4 w-4 text-primary" />
+                    <span>Cardboard boxes and packaging</span>
+                  </li>
+                </ul>
+              </CardContent>
+              <CardFooter>
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/schedule">Schedule Pickup</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+            <Card id="metal" className="flex flex-col">
+              <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
+                <Image
+                  src="/images/can-recycling.jpg"
+                  width={300}
+                  height={160}
+                  alt="Can recycling"
+                  className="h-full w-full object-cover rounded-md"
+                />
+              </div>
+              <CardHeader className="py-0 mb-2">
+                <CardTitle className="text-lg font-semibold text-primary">Can Recycling</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <p className="text-sm text-muted-foreground">
+                  Metal recycling is one of the most efficient forms of recycling, with significant energy savings
+                  compared to mining new materials. We collect and process various metal items from your home.
+                </p>
+                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <Truck className="h-4 w-4 text-primary" />
+                    <span>Aluminum cans and foil</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Truck className="h-4 w-4 text-primary" />
+                    <span>Steel and tin cans</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Truck className="h-4 w-4 text-primary" />
+                    <span>Small metal appliances</span>
+                  </li>
+                </ul>
+              </CardContent>
+              <CardFooter>
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/schedule">Schedule Pickup</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="bg-primary/5 py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">How It Works</h2>
+              <p className="max-w-[700px] text-muted-foreground md:text-xl">
+                Our simple process makes recycling easy and convenient
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
+                1
+              </div>
+              <h3 className="mt-4 text-xl font-bold">Schedule</h3>
+              <p className="mt-2 text-muted-foreground">
+                Book a pickup online or by phone. Choose a date and time that works for you.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
+                2
+              </div>
+              <h3 className="mt-4 text-xl font-bold">Prepare</h3>
+              <p className="mt-2 text-muted-foreground">
+                Sort your recyclables according to our guidelines. We'll provide instructions for each material type.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
+                3
+              </div>
+              <h3 className="mt-4 text-xl font-bold">Recycle</h3>
+              <p className="mt-2 text-muted-foreground">
+                Our team will collect your recyclables and ensure they're properly processed and recycled.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Frequently Asked Questions</h2>
+              <p className="max-w-[700px] text-muted-foreground md:text-xl">
+                Find answers to common questions about our recycling services
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 grid gap-4 md:grid-cols-2 lg:gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>What items do you accept for recycling?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  We accept a wide range of recyclable materials, including plastic containers, paper products, metal
+                  items, glass containers, electronic waste, and more. Each material type has specific guidelines for
+                  preparation, which we provide when you schedule a pickup.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>How often can I schedule pickups?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  For residential customers, we offer on-demand pickups as well as regular scheduled service (weekly,
+                  bi-weekly, or monthly). Commercial customers can customize their collection schedule based on their
+                  specific needs and volume of recyclables.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Do I need to sort my recyclables?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Basic sorting is required to ensure efficient processing. We ask that you separate paper, plastic,
+                  metal, glass, and electronic waste. Detailed sorting instructions will be provided when you schedule
+                  your service.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>What happens to my recyclables after collection?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  After collection, your recyclables are transported to our processing facility where they are sorted,
+                  cleaned, and prepared for recycling. Materials are then sent to specialized recycling facilities where
+                  they are transformed into new products, reducing the need for virgin materials.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-primary text-primary-foreground py-16 md:py-24">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to Start Recycling?</h2>
+              <p className="max-w-[700px] md:text-xl">
+                Schedule a pickup today and join our mission for a greener planet
+              </p>
+            </div>
+            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <Button asChild size="lg" variant="secondary">
+                <Link href="/schedule">Schedule Pickup</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+              >
+                <Link href="/contact">Contact Us</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+{/* <Tabs defaultValue="residential" className="mt-12">
             <div className="flex justify-center">
               <TabsList className="grid w-full max-w-md grid-cols-2">
                 <TabsTrigger value="residential">Residential</TabsTrigger>
@@ -67,7 +323,7 @@ export default function ServicesPage() {
                   <CardContent className="flex-1">
                     <div className="mb-4 aspect-video overflow-hidden rounded-md">
                       <Image
-                        src="/images/plastic-recycling.png"
+                        src="/images/plastic-recycling.jpeg"
                         width={400}
                         height={225}
                         alt="Plastic recycling"
@@ -537,143 +793,4 @@ export default function ServicesPage() {
                 </Card>
               </div>
             </TabsContent>
-          </Tabs>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="bg-primary/5 py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">How It Works</h2>
-              <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Our simple process makes recycling easy and convenient
-              </p>
-            </div>
-          </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="flex flex-col items-center text-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
-                1
-              </div>
-              <h3 className="mt-4 text-xl font-bold">Schedule</h3>
-              <p className="mt-2 text-muted-foreground">
-                Book a pickup online or by phone. Choose a date and time that works for you.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
-                2
-              </div>
-              <h3 className="mt-4 text-xl font-bold">Prepare</h3>
-              <p className="mt-2 text-muted-foreground">
-                Sort your recyclables according to our guidelines. We'll provide instructions for each material type.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
-                3
-              </div>
-              <h3 className="mt-4 text-xl font-bold">Recycle</h3>
-              <p className="mt-2 text-muted-foreground">
-                Our team will collect your recyclables and ensure they're properly processed and recycled.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Frequently Asked Questions</h2>
-              <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Find answers to common questions about our recycling services
-              </p>
-            </div>
-          </div>
-          <div className="mt-12 grid gap-4 md:grid-cols-2 lg:gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>What items do you accept for recycling?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  We accept a wide range of recyclable materials, including plastic containers, paper products, metal
-                  items, glass containers, electronic waste, and more. Each material type has specific guidelines for
-                  preparation, which we provide when you schedule a pickup.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>How often can I schedule pickups?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  For residential customers, we offer on-demand pickups as well as regular scheduled service (weekly,
-                  bi-weekly, or monthly). Commercial customers can customize their collection schedule based on their
-                  specific needs and volume of recyclables.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Do I need to sort my recyclables?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Basic sorting is required to ensure efficient processing. We ask that you separate paper, plastic,
-                  metal, glass, and electronic waste. Detailed sorting instructions will be provided when you schedule
-                  your service.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>What happens to my recyclables after collection?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  After collection, your recyclables are transported to our processing facility where they are sorted,
-                  cleaned, and prepared for recycling. Materials are then sent to specialized recycling facilities where
-                  they are transformed into new products, reducing the need for virgin materials.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Ready to Start Recycling?</h2>
-              <p className="max-w-[700px] md:text-xl">
-                Schedule a pickup today and join our mission for a greener planet
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button asChild size="lg" variant="secondary">
-                <Link href="/schedule">Schedule Pickup</Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-              >
-                <Link href="/contact">Contact Us</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  )
-}
+          </Tabs> */}

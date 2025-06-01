@@ -65,10 +65,10 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
-            <Card>
+            <Card className="bg-primary/10">
               <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
                 <Image
-                  src="/images/plastic-recycling.png"
+                  src="/images/plastic-recycling.jpeg"
                   width={300}
                   height={160}
                   alt="Plastic recycling"
@@ -76,7 +76,7 @@ export default function Home() {
                 />
               </div>
               <CardHeader className="py-0 mb-2">
-                <CardTitle className="text-lg font-semibold">Plastic Recycling</CardTitle>
+                <CardTitle className="text-lg font-semibold text-primary">Plastic Recycling</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -84,7 +84,7 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="bg-primary/10">
               <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
                 <Image
                   src="/images/carton-recycling.jpg"
@@ -95,7 +95,7 @@ export default function Home() {
                 />
               </div>
               <CardHeader className="py-0 mb-2">
-                <CardTitle className="text-lg font-semibold">Cardboard Recycling</CardTitle>
+                <CardTitle className="text-lg font-semibold text-primary">Cardboard Recycling</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -103,7 +103,7 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="bg-primary/10">
               <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
                 <Image
                   src="/images/can-recycling.jpg"
@@ -114,7 +114,7 @@ export default function Home() {
                 />
               </div>
               <CardHeader className="py-0 mb-2">
-                <CardTitle className="text-lg font-semibold">Can Recycling</CardTitle>
+                <CardTitle className="text-lg font-semibold text-primary">Can Recycling</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">

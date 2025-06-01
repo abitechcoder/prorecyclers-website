@@ -207,7 +207,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="bg-primary/5 py-16 md:py-24">
+      {/* <section className="bg-primary/5 py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -275,7 +275,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 md:py-24">
@@ -289,9 +289,9 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
-                <Link href="/schedule">Schedule Pickup</Link>
+                <Link href="https://wa.me/2348012345678?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="border-primary">
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>

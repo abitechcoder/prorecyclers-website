@@ -50,11 +50,11 @@ export default function Footer() {
                   Services
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/impact" className="text-sm text-muted-foreground hover:text-primary">
                   Impact
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary">
                   Contact

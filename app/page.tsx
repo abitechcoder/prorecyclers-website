@@ -35,7 +35,7 @@ export default function Home() {
                   Transform Waste Into a Greener Future
                 </h1>
                 <p className="max-w-[600px] md:text-xl text-gray-200">
-                  Join Prorecycler in turning Nigeria's waste challenges into
+                  Join Prorecyclers in turning Nigeria's waste challenges into
                   sustainable opportunities.
                 </p>
               </div>
@@ -219,7 +219,7 @@ export default function Home() {
                       </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "Prorecycler has revolutionized our waste management. Their reliable service and commitment to
+                          "Prorecyclers has revolutionized our waste management. Their reliable service and commitment to
                           sustainability perfectly align with our company's environmental goals."
                         </p>
                         <p className="mt-2 font-semibold">Adebayo Ogundimu</p>
@@ -237,7 +237,7 @@ export default function Home() {
                       </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "As a hotel business, we generate significant waste. Prorecycler's comprehensive recycling
+                          "As a hotel business, we generate significant waste. Prorecyclers's comprehensive recycling
                           program has helped us reduce our environmental footprint significantly."
                         </p>
                         <p className="mt-2 font-semibold">Fatima Ibrahim</p>
@@ -255,7 +255,7 @@ export default function Home() {
                       </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "The detailed reporting and community education provided by Prorecycler have been invaluable
+                          "The detailed reporting and community education provided by Prorecyclers have been invaluable
                           for our corporate social responsibility initiatives."
                         </p>
                         <p className="mt-2 font-semibold">Chinedu Okoro</p>
@@ -295,7 +295,7 @@ export default function Home() {
                       </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "I needed to dispose of old electronics responsibly. Prorecycler made the process easy and
+                          "I needed to dispose of old electronics responsibly. Prorecyclers made the process easy and
                           gave me confidence about data security."
                         </p>
                         <p className="mt-2 font-semibold">Tunde Fashola</p>
@@ -313,7 +313,7 @@ export default function Home() {
                       </Avatar>
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          "The educational resources from Prorecycler have helped our family become more conscious about
+                          "The educational resources from Prorecyclers have helped our family become more conscious about
                           waste reduction and proper recycling practices."
                         </p>
                         <p className="mt-2 font-semibold">Mr. & Mrs. Okafor</p>

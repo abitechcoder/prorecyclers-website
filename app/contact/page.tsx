@@ -147,7 +147,7 @@ export default function ContactPage() {
                     <CheckCircle className="h-8 w-8 text-primary" />
                   </div>
                   <CardTitle className="text-center text-2xl">Message Sent Successfully!</CardTitle>
-                  <CardDescription className="text-center">Thank you for contacting Prorecycler.</CardDescription>
+                  <CardDescription className="text-center">Thank you for contacting Prorecyclers.</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <Alert>

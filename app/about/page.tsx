@@ -21,7 +21,7 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-3">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-300">About Prorecycler</h1>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-300">About Prorecyclers</h1>
               <p className="max-w-[600px] md:text-xl text-white">
                 Transforming Nigeria's waste challenges into sustainable opportunities through innovative recycling
                 solutions.
@@ -39,7 +39,7 @@ export default function AboutPage() {
                 src="/images/facility.jpeg"
                 width={600}
                 height={400}
-                alt="Prorecycler facility"
+                alt="Prorecyclers facility"
                 className="rounded-lg object-cover"
               />
             </div>
@@ -47,13 +47,13 @@ export default function AboutPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
                 <p className="text-muted-foreground">
-                  Prorecycler is a Badagry-based recycling and waste management company dedicated to transforming
+                  Prorecyclers is a Badagry-based recycling and waste management company dedicated to transforming
                   Nigeria's waste challenges into sustainable opportunities. We specialize in the collection, sorting,
                   and processing of plastics, paper, metals, and electronic waste, offering practical and scalable
                   solutions that reduce pollution and promote environmental responsibility.
                 </p>
                 <p className="text-muted-foreground">
-                  At Prorecycler, we believe that sustainability starts with action. Through our innovative recycling
+                  At Prorecyclers, we believe that sustainability starts with action. Through our innovative recycling
                   programs and strong community engagement, we empower individuals, schools, and businesses to
                   participate in the circular economy. From doorstep pickups to bulk corporate recycling, we tailor our
                   services to meet the diverse needs of the Badagry community and beyond.
@@ -289,7 +289,7 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
-                <Link href="https://wa.me/2348012345678?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
+                <Link href="https://wa.me/2348012345678?text=Hi%20Prorecyclers,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-primary">
                 <Link href="/contact">Contact Us</Link>

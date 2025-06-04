@@ -26,16 +26,15 @@ export default function ServicesPage() {
             fill
             alt="A boy and a girl picking up cans in a park"
             className="object-center object-cover"
-            priority
           />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative z-10 container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-3">
+          <div className="flex flex-col items-center space-y-3 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-300">
               Our Recycling Services
             </h1>
-            <p className="max-w-[600px] md:text-xl text-white">
+            <p className="max-w-[700px] md:text-xl text-white">
               Comprehensive recycling solutions for all your waste management
               needs, from residential to commercial.
             </p>

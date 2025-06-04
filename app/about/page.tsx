@@ -20,9 +20,9 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative z-10 container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-3">
+          <div className="flex flex-col items-center space-y-3 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-300">About Prorecyclers</h1>
-              <p className="max-w-[600px] md:text-xl text-white">
+              <p className="max-w-[700px] md:text-xl text-white">
                 Transforming Nigeria's waste challenges into sustainable opportunities through innovative recycling
                 solutions.
               </p>
@@ -47,7 +47,7 @@ export default function AboutPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
                 <p className="text-muted-foreground">
-                  Prorecyclers is a Badagry-based recycling and waste management company dedicated to transforming
+                  Prorecyclers is a recycling and waste management company dedicated to transforming
                   Nigeria's waste challenges into sustainable opportunities. We specialize in the collection, sorting,
                   and processing of plastics, paper, metals, and electronic waste, offering practical and scalable
                   solutions that reduce pollution and promote environmental responsibility.

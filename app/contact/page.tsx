@@ -53,12 +53,16 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-primary/5 py-16 md:py-24">
-        <div className="container px-4 md:px-6">
+      <section className="bg-primary/5 relative py-16 md:py-24">
+        <div className="absolute inset-0 z-0">
+          <Image src={"/images/contact-us-image.jpg"} fill alt="image of a customer support" className="object-cover object-center" />
+          <div className="absolute inset-0 bg-black/70"></div>
+        </div>
+        <div className="relative z-10 container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h1>
-              <p className="max-w-[700px] text-muted-foreground md:text-xl">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-300">Contact Us</h1>
+              <p className="max-w-[700px] text-white md:text-xl">
                 Have questions or need more information? We're here to help you with your recycling needs in Badagry and
                 beyond.
               </p>
@@ -71,7 +75,7 @@ export default function ContactPage() {
       <section className="py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <Card>
+            <Card className="shadow-primary shadow-sm border-t-primary border-l-primary border-r-primary">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
@@ -79,17 +83,17 @@ export default function ContactPage() {
                   </div>
                   <CardTitle className="text-xl">Phone</CardTitle>
                   <CardDescription className="flex flex-col gap-2">
-                    <a href="tel:+2349040020889" className="text-primary hover:underline">
+                    <a href="tel:+2349040020889" className="text-muted-foreground hover:underline">
                       +234 904 0020 889
                     </a>
-                    <a href="tel:+2348109891479" className="text-primary hover:underline">
+                    <a href="tel:+2348109891479" className="text-muted-foreground hover:underline">
                       +234 810 9891 479
                     </a>
                   </CardDescription>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="shadow-primary shadow-sm border-t-primary border-l-primary border-r-primary">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
@@ -97,41 +101,58 @@ export default function ContactPage() {
                   </div>
                   <CardTitle className="text-xl">Email</CardTitle>
                   <CardDescription>
-                    <a href="mailto:info@prorecycler.ng" className="text-primary hover:underline">
+                    <a href="mailto:info@prorecycler.ng" className="text-muted-foreground hover:underline">
                       prorecyclersng@gmail.com
                     </a>
                   </CardDescription>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="shadow-primary shadow-sm border-t-primary border-l-primary border-r-primary">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-xl">Address</CardTitle>
-                  <CardDescription>
+                  <CardDescription className="text-muted-foreground">
                     25, Opa Farm Street, Off Agelasho Ajara Vetho, Badagry, Lagos State.
                   </CardDescription>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="shadow-primary shadow-sm border-t-primary border-l-primary border-r-primary">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
                     <Clock className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-xl">Hours</CardTitle>
-                  <CardDescription>
-                    Monday - Friday
+                  <CardDescription className="text-muted-foreground">
+                    Monday - Saturday
                     <br />
                     9:00 AM - 5:00 PM
                   </CardDescription>
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-12 md:py-16">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter">Find Us</h2>
+              <p className="max-w-[700px] text-muted-foreground">
+                Visit our facility in Badagry to learn more about our recycling process
+              </p>
+            </div>
+          </div>
+          <div className="aspect-video w-full h-[300px] lg:h-[350px] overflow-hidden rounded-lg border">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.613496174295!2d2.8945649151025603!3d6.443647906091379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b63aae5960b1b%3A0x87c549469e91737a!2sOpa%20Farm%20Rd%2C%20Isalu%20103242%2C%20Lagos!5e0!3m2!1sen!2sng!4v1748686965326!5m2!1sen!2sng" className="w-full h-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
@@ -264,23 +285,6 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
             )}
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="py-12 md:py-16">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter">Find Us</h2>
-              <p className="max-w-[700px] text-muted-foreground">
-                Visit our facility in Badagry to learn more about our recycling process
-              </p>
-            </div>
-          </div>
-          <div className="aspect-video w-full h-[300px] lg:h-[450px] overflow-hidden rounded-lg border">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.613496174295!2d2.8945649151025603!3d6.443647906091379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b63aae5960b1b%3A0x87c549469e91737a!2sOpa%20Farm%20Rd%2C%20Isalu%20103242%2C%20Lagos!5e0!3m2!1sen!2sng!4v1748686965326!5m2!1sen!2sng" className="w-full h-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>

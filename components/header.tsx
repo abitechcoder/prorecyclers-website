@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Recycle } from "lucide-react"
+import { Menu } from "lucide-react"
 import Image from "next/image"
 
 const navigation = [
@@ -42,7 +42,7 @@ export default function Header() {
           ))}
           <Button asChild>
             <a
-              href="https://wa.me/2348012345678?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
+              href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"

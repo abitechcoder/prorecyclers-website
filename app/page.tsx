@@ -41,7 +41,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-4 min-[400px]:flex-row">
                 <Button asChild size="lg">
-                  <Link href="/schedule">Schedule Pickup</Link>
+                  <Link href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank" >Schedule Pickup</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href="/services">Learn More</Link>
@@ -340,7 +340,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/schedule">Schedule Pickup</Link>
+                <Link href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
               </Button>
               <Button
                 asChild

@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Mail, Phone, MapPin, CheckCircle, Clock } from "lucide-react"
+import { Mail, Phone, MapPin, CheckCircle, Clock, Loader2, AlertCircle } from "lucide-react"
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -32,6 +32,8 @@ const formSchema = z.object({
 
 export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -44,10 +46,33 @@ export default function ContactPage() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-    setIsSubmitted(true)
-    // In a real application, you would send this data to your backend
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true)
+    setSubmitError(null)
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setIsSubmitted(true)
+        form.reset()
+      } else {
+        setSubmitError(result.error || "Failed to send message. Please try again.")
+      }
+    } catch (error) {
+      console.error("Submit error:", error)
+      setSubmitError("Network error. Please check your connection and try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -55,7 +80,12 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-primary/5 relative py-16 md:py-24">
         <div className="absolute inset-0 z-0">
-          <Image src={"/images/contact-us-image.jpg"} fill alt="image of a customer support" className="object-cover object-center" />
+          <Image
+            src={"/images/contact-us-image.jpg"}
+            fill
+            alt="image of a customer support"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-black/70"></div>
         </div>
         <div className="relative z-10 container px-4 md:px-6">
@@ -101,7 +131,7 @@ export default function ContactPage() {
                   </div>
                   <CardTitle className="text-xl">Email</CardTitle>
                   <CardDescription>
-                    <a href="mailto:info@prorecycler.ng" className="text-muted-foreground hover:underline">
+                    <a href="mailto:prorecyclersng@gmail.com" className="text-muted-foreground hover:underline">
                       prorecyclersng@gmail.com
                     </a>
                   </CardDescription>
@@ -152,7 +182,12 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="aspect-video w-full h-[300px] lg:h-[350px] overflow-hidden rounded-lg border">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.613496174295!2d2.8945649151025603!3d6.443647906091379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b63aae5960b1b%3A0x87c549469e91737a!2sOpa%20Farm%20Rd%2C%20Isalu%20103242%2C%20Lagos!5e0!3m2!1sen!2sng!4v1748686965326!5m2!1sen!2sng" className="w-full h-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.613496174295!2d2.8945649151025603!3d6.443647906091379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b63aae5960b1b%3A0x87c549469e91737a!2sOpa%20Farm%20Rd%2C%20Isalu%20103242%2C%20Lagos!5e0!3m2!1sen!2sng!4v1748686965326!5m2!1sen!2sng"
+              className="w-full h-full"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -172,9 +207,10 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <Alert>
+                    <CheckCircle className="h-4 w-4" />
                     <AlertTitle>Confirmation</AlertTitle>
                     <AlertDescription>
-                      We have received your message and will get back to you as soon as possible.
+                      We have received your message and will get back to you within 24 hours.
                     </AlertDescription>
                   </Alert>
                   <div className="flex justify-center">
@@ -191,6 +227,13 @@ export default function ContactPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
+                  {submitError && (
+                    <Alert variant="destructive" className="mb-6">
+                      <AlertCircle className="h-4 w-4" />
+                      <AlertTitle>Error</AlertTitle>
+                      <AlertDescription>{submitError}</AlertDescription>
+                    </Alert>
+                  )}
                   <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                       <div className="grid gap-4 md:grid-cols-2">
@@ -277,8 +320,15 @@ export default function ContactPage() {
                           </FormItem>
                         )}
                       />
-                      <Button type="submit" className="w-full">
-                        Send Message
+                      <Button type="submit" className="w-full" disabled={isSubmitting}>
+                        {isSubmitting ? (
+                          <>
+                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                            Sending Message...
+                          </>
+                        ) : (
+                          "Send Message"
+                        )}
                       </Button>
                     </form>
                   </Form>

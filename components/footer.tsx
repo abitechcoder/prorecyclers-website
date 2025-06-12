@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin, Recycle } from "lucide-react"
+import { Instagram, Twitter, Mail, Phone, MapPin, Recycle } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -14,21 +14,21 @@ export default function Footer() {
               solutions.
             </p>
             <div className="mt-6 flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              {/* <Link href="#" className="text-muted-foreground hover:text-primary">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              </Link> */}
+              <Link href="https://www.instagram.com/prorecyclers?igsh=MTZzdHdqajNyYnk5bg==" target="_blank" className="text-muted-foreground hover:text-primary">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link href="https://x.com/prorecyclers" target="_blank" className="text-muted-foreground hover:text-primary">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
+              <Link href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank" className="text-muted-foreground hover:text-primary">
+                <Image src={"/images/whatsapp-icon.png"} alt="Whatsapp icon" width={5} height={5} className="h-5 w-5" />
+                <span className="sr-only">Whatsapp</span>
               </Link>
             </div>
           </div>
@@ -66,22 +66,22 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Services</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/services#plastic" className="text-sm text-muted-foreground hover:text-primary">
+                <Link href="/services" className="text-sm text-muted-foreground hover:text-primary">
                   Plastic Recycling
                 </Link>
               </li>
               <li>
-                <Link href="/services#paper" className="text-sm text-muted-foreground hover:text-primary">
+                <Link href="/services" className="text-sm text-muted-foreground hover:text-primary">
                   Cardboard Recycling
                 </Link>
               </li>
               <li>
-                <Link href="/services#metal" className="text-sm text-muted-foreground hover:text-primary">
+                <Link href="/services" className="text-sm text-muted-foreground hover:text-primary">
                   Can Recycling
                 </Link>
               </li>
               <li>
-                <Link href="/schedule" className="text-sm text-muted-foreground hover:text-primary">
+                <Link href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." className="text-sm text-muted-foreground hover:text-primary">
                   Schedule Pickup
                 </Link>
               </li>

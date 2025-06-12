@@ -289,7 +289,7 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
-                <Link href="https://wa.me/2348012345678?text=Hi%20Prorecyclers,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
+                <Link href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-primary">
                 <Link href="/contact">Contact Us</Link>

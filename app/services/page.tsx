@@ -15,6 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import CTA from "@/components/CTA";
 
 export default function ServicesPage() {
   return (
@@ -248,40 +249,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                Ready to Start Recycling?
-              </h2>
-              <p className="max-w-[700px] md:text-xl">
-                Schedule a pickup today and join our mission for a greener
-                planet
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button asChild size="lg" variant="secondary">
-                <Link
-                  href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
-                  target="_blank"
-                >
-                  Schedule Pickup
-                </Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-              >
-                <Link href="/contact">Contact Us</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTA/>
     </div>
   );
 }

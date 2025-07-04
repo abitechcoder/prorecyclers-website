@@ -49,7 +49,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <Button asChild>
+        <Button asChild className="hidden md:flex">
           <a
             href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
             target="_blank"

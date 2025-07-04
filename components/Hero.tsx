@@ -29,8 +29,8 @@ const Hero = () => {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="flex flex-col justify-center space-y-8 text-white bg-black-50">
               <div className="space-y-4">
-                <motion.h1 initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2, ease: 'easeIn'}} className="text-center lg:text-left text-4xl font-bold tracking-tight sm:text-5xl xl:text-7xl">
-                  Exchange your <br/> Trash to Cash
+                <motion.h1 initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.2, ease: 'easeIn'}} className="text-center lg:text-left text-3xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
+                  Transform Waste Into a Greener Future
                 </motion.h1>
                 <motion.p initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.4, ease: 'easeOut'}} className="max-w-[600px] md:text-xl text-gray-200 text-center lg:text-left">
                   Join Prorecyclers in turning Nigeria's waste challenges into

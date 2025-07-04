@@ -31,7 +31,7 @@ const Services = () => {
             </motion.p>
           </div>
         </div>
-        <motion.div initial={{opacity: 0, y: "50%"}} whileInView={{opacity: 1, y: 0}} transition={{delay: 0.5, ease: "easeOut", duration: 0.5}} className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
           <Card className="bg-primary/10">
             <div className="mb-4 p-6 pb-0 h-60 w-full overflow-hidden rounded-md">
               <Image
@@ -98,7 +98,7 @@ const Services = () => {
               </p>
             </CardContent>
           </Card>
-        </motion.div>
+        </div>
         <div className="flex justify-center mt-8">
           <Button asChild variant="default">
             <Link href="/services">View All Services</Link>

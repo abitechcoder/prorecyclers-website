@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 const CTA = () => {
   return (
-    <section className="bg-primary text-primary-foreground py-16 md:py-24">
+    <section className="bg-gradient-to-b from-[#004526] to-primary text-primary-foreground py-16 md:py-24">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -16,7 +16,7 @@ const CTA = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-3xl font-bold tracking-tighter md:text-4xl"
             >
-              Ready to exchange your trash to cash?
+              Exchange your Trash to Cash
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, x: "-100%" }}

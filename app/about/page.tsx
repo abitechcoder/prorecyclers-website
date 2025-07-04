@@ -36,11 +36,11 @@ export default function AboutPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="order-2 lg:order-1">
               <Image
-                src="/images/facility.jpeg"
+                src="/images/prorecyclers.jpeg"
                 width={600}
                 height={400}
-                alt="Prorecyclers facility"
-                className="rounded-lg object-cover"
+                alt="Prorecyclers pickup truck"
+                className="rounded-lg object-cover object-left"
               />
             </div>
             <div className="order-1 lg:order-2 flex flex-col justify-center space-y-4">
@@ -69,7 +69,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-primary/5 py-16 md:py-24">
+      <section className="bg-primary/10 py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -278,7 +278,7 @@ export default function AboutPage() {
       </section> */}
 
       {/* CTA Section */}
-      <section className="bg-primary text-primary-foreground  py-16 md:py-24">
+      <section className="bg-gradient-to-b from-[#004526] to-primary text-primary-foreground  py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">

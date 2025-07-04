@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { HowItWorks } from "@/components/how-it-works";
 import {
   Card,
   CardContent,
@@ -82,7 +83,12 @@ export default function ServicesPage() {
               </CardContent>
               <CardFooter>
                 <Button asChild variant="default" className="w-full">
-                  <Link href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
+                  <Link
+                    href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
+                    target="_blank"
+                  >
+                    Schedule Pickup
+                  </Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -111,7 +117,12 @@ export default function ServicesPage() {
               </CardContent>
               <CardFooter>
                 <Button asChild variant="default" className="w-full">
-                  <Link href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
+                  <Link
+                    href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
+                    target="_blank"
+                  >
+                    Schedule Pickup
+                  </Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -139,7 +150,12 @@ export default function ServicesPage() {
               </CardContent>
               <CardFooter>
                 <Button asChild variant="default" className="w-full">
-                  <Link href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
+                  <Link
+                    href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
+                    target="_blank"
+                  >
+                    Schedule Pickup
+                  </Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -148,52 +164,9 @@ export default function ServicesPage() {
       </section>
 
       {/* How It Works */}
-      <section className="bg-primary/5 py-16 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                How It Works
-              </h2>
-              <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Our simple process makes recycling easy and convenient
-              </p>
-            </div>
-          </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="flex flex-col items-center text-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
-                1
-              </div>
-              <h3 className="mt-4 text-xl font-bold">Schedule</h3>
-              <p className="mt-2 text-muted-foreground">
-                Book a pickup online or by phone. Choose a date and time that
-                works for you.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
-                2
-              </div>
-              <h3 className="mt-4 text-xl font-bold">Prepare</h3>
-              <p className="mt-2 text-muted-foreground">
-                Sort your recyclables according to our guidelines. We'll provide
-                instructions for each material type.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground">
-                3
-              </div>
-              <h3 className="mt-4 text-xl font-bold">Recycle</h3>
-              <p className="mt-2 text-muted-foreground">
-                Our team will collect your recyclables and ensure they're
-                properly processed and recycled.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HowItWorks />
+
+      {/* Additional Services */}
 
       {/* FAQ */}
       <section className="py-16 md:py-24">
@@ -222,9 +195,9 @@ export default function ServicesPage() {
                 <AccordionContent>
                   <p className="text-muted-foreground text-base lg:text-lg">
                     We accept a wide range of recyclable materials, including
-                    plastic containers, cardboard boxes and can items. Each material type
-                    has specific guidelines for preparation, which we provide
-                    when you schedule a pickup.
+                    plastic containers, cardboard boxes and can items. Each
+                    material type has specific guidelines for preparation, which
+                    we provide when you schedule a pickup.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -249,8 +222,9 @@ export default function ServicesPage() {
                 <AccordionContent>
                   <p className="text-muted-foreground text-base lg:text-lg">
                     Basic sorting is required to ensure efficient processing. We
-                    ask that you separate cardboard boxes, plastics and cans. Detailed sorting instructions will be
-                    provided when you schedule a pickup.
+                    ask that you separate cardboard boxes, plastics and cans.
+                    Detailed sorting instructions will be provided when you
+                    schedule a pickup.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -289,7 +263,12 @@ export default function ServicesPage() {
 
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg" variant="secondary">
-                <Link href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup." target="_blank">Schedule Pickup</Link>
+                <Link
+                  href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
+                  target="_blank"
+                >
+                  Schedule Pickup
+                </Link>
               </Button>
               <Button
                 asChild

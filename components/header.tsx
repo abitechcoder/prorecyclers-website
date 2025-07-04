@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu } from "lucide-react"
-import Image from "next/image"
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
+import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -13,44 +14,51 @@ const navigation = [
   { name: "Services", href: "/services" },
   // { name: "Impact", href: "/impact" },
   { name: "Contact", href: "/contact" },
-]
+];
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 py-10 px-4 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <Image src={"/images/logo.png"} alt="Prorecycler Logo image" width={100} height={80}/>
+            <Image
+              src={"/images/logo.png"}
+              alt="Prorecycler Logo image"
+              width={100}
+              height={80}
+            />
             {/* <Recycle className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold text-primary">Prorecycler</span> */}
           </Link>
         </div>
 
-        <nav className="hidden md:flex md:gap-6 md:items-center">
+        <nav className="hidden md:flex md:gap-8 md:items-center">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="relative text-sm font-medium transition-colors hover:text-primary group"
+              className={`relative text-sm transition-colors hover:text-primary group ${pathname === item.href ? "text-primary font-bold" : "text-muted-foreground font-medium"}`}
             >
               {item.name}
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+              <span className={`absolute inset-x-0 bottom-0 h-0.5 bg-primary transform group-hover:scale-x-100 transition-transform duration-300 ease-in-out ${pathname === item.href ? "scale-x-100" : "scale-x-0"}`}></span>
             </Link>
           ))}
-          <Button asChild>
-            <a
-              href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              Schedule Pickup
-            </a>
-          </Button>
         </nav>
+
+        <Button asChild>
+          <a
+            href="https://wa.me/2349040020889?text=Hi%20Prorecycler,%20I'd%20like%20to%20schedule%20a%20recycling%20pickup."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            Schedule Pickup
+          </a>
+        </Button>
 
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
@@ -88,5 +96,5 @@ export default function Header() {
         </Sheet>
       </div>
     </header>
-  )
+  );
 }

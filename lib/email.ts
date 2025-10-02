@@ -16,7 +16,7 @@ export async function sendContactEmail(data: ContactFormData) {
 
     const emailData = await resend.emails.send({
       from: 'Prorecyclers Website <info@prorecyclers.africa>', // You'll need to verify this domain with Resend
-      to: ["prorecyclersng@gmail.com", "abiolaolalekan39@gmail.com"],
+      to: ["prorecyclersng@gmail.com"],
       subject: `Contact Form: ${subject}`,
       html: `
         <!DOCTYPE html>

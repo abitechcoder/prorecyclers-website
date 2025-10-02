@@ -3,22 +3,22 @@ import { Resend } from "resend"
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export interface ContactFormData {
-    name: string
-    email: string
-    phone?: string
-    subject: string
-    message: string
+  name: string
+  email: string
+  phone?: string
+  subject: string
+  message: string
 }
 
 export async function sendContactEmail(data: ContactFormData) {
-    try {
-        const { name, email, phone, subject, message } = data
+  try {
+    const { name, email, phone, subject, message } = data
 
-        const emailData = await resend.emails.send({
-            from: 'Acme <onboarding@resend.dev>', // You'll need to verify this domain with Resend
-            to: ["prorecyclersng@gmail.com"],
-            subject: `Contact Form: ${subject}`,
-            html: `
+    const emailData = await resend.emails.send({
+      from: 'Prorecyclers Website <info@prorecyclers.africa>', // You'll need to verify this domain with Resend
+      to: ["prorecyclersng@gmail.com", "abiolaolalekan39@gmail.com"],
+      subject: `Contact Form: ${subject}`,
+      html: `
         <!DOCTYPE html>
         <html>
         <head>
@@ -72,7 +72,7 @@ export async function sendContactEmail(data: ContactFormData) {
         </body>
         </html>
       `,
-            text: `
+      text: `
         New Contact Form Submission - Prorecyclers
         
         Name: ${name}
@@ -86,11 +86,11 @@ export async function sendContactEmail(data: ContactFormData) {
         ---
         This email was sent from the Prorecyclers contact form.
       `,
-        })
+    })
 
-        return { success: true, data: emailData }
-    } catch (error) {
-        console.error("Error sending email:", error)
-        return { success: false, error: error instanceof Error ? error.message : "Unknown error" }
-    }
+    return { success: true, data: emailData }
+  } catch (error) {
+    console.error("Error sending email:", error)
+    return { success: false, error: error instanceof Error ? error.message : "Unknown error" }
+  }
 }

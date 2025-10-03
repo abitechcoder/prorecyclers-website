@@ -39,7 +39,7 @@ export async function sendContactEmail(data: ContactFormData) {
         <body>
           <div class="container">
             <div class="header">
-              <img class="logo" src="https://v0-recycle-company-website.vercel.app/images/logo.png" alt="Prorecylers Logo"/>
+              <img class="logo" src="https://www.prorecyclers.africa/images/logo.png" alt="Prorecylers Logo"/>
               <p><i>Recycling to Changing Life...</i></p>
             </div>
             <div class="content">
